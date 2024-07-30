@@ -14,6 +14,8 @@
 		66DB6B3D2C5413E800109B82 /* Group_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB6B3C2C5413E800109B82 /* Group_2Tests.swift */; };
 		66DB6B472C5413E800109B82 /* Group_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB6B462C5413E800109B82 /* Group_2UITests.swift */; };
 		66DB6B492C5413E800109B82 /* Group_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB6B482C5413E800109B82 /* Group_2UITestsLaunchTests.swift */; };
+		66DB6BC82C593F4B00109B82 /* fitnessGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB6BC72C593F4B00109B82 /* fitnessGoals.swift */; };
+		66DB6BCA2C593F6000109B82 /* fitnessPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB6BC92C593F6000109B82 /* fitnessPlan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		66DB6B422C5413E800109B82 /* Group 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Group 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DB6B462C5413E800109B82 /* Group_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group_2UITests.swift; sourceTree = "<group>"; };
 		66DB6B482C5413E800109B82 /* Group_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66DB6BC72C593F4B00109B82 /* fitnessGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitnessGoals.swift; sourceTree = "<group>"; };
+		66DB6BC92C593F6000109B82 /* fitnessPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitnessPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				66DB6B2B2C5413E300109B82 /* Group_2App.swift */,
 				66DB6B2D2C5413E300109B82 /* ContentView.swift */,
+				66DB6BC72C593F4B00109B82 /* fitnessGoals.swift */,
+				66DB6BC92C593F6000109B82 /* fitnessPlan.swift */,
 				66DB6B2F2C5413E700109B82 /* Assets.xcassets */,
 				66DB6B312C5413E700109B82 /* Preview Content */,
 			);
@@ -259,6 +265,8 @@
 			files = (
 				66DB6B2E2C5413E300109B82 /* ContentView.swift in Sources */,
 				66DB6B2C2C5413E300109B82 /* Group_2App.swift in Sources */,
+				66DB6BC82C593F4B00109B82 /* fitnessGoals.swift in Sources */,
+				66DB6BCA2C593F6000109B82 /* fitnessPlan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
