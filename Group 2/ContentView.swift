@@ -21,6 +21,9 @@ struct ContentView: View {
                 NavigationLink(destination: ContentView()) {
                         Text("Home")
                 }.padding(.top, 5)
+                NavigationLink(destination: cause()) {
+                        Text("Our Cause")
+                }.padding(.top, 5)
                 NavigationLink(destination: fitnessGoals()) {
                         Text("Fitness Goals")
                       }.padding(.top, 5)
@@ -37,13 +40,13 @@ struct ContentView: View {
                     
                    
                 }.padding(.top, 20)
-                Text("Our Cause")
-                Spacer() // Add a spacer to push the content to the bottom
+                
+                Spacer() // Add a spacer to ensure buttons stay at the bottom               Spacer() // Add a spacer to push the content to the bottom
                 
                 Text("")
                 
                 Spacer() // Add a spacer to ensure buttons stay at the bottom
-                
+              
                     
                     
             }
