@@ -5,7 +5,7 @@
 //  Created by Marina Foko on 7/26/24.
 //
 import SwiftUI
-
+var name1 = ""
 struct ContentView: View {
     @State private var name = ""
     @State private var textTitle = "What is your name"
@@ -35,6 +35,7 @@ struct ContentView: View {
                     TextField("", text: $name).multilineTextAlignment(.center).font(.title).border(Color.black, width: 1)
                     Button("Submit Name"){
                         textTitle = "Welcome, \(name)"
+                        name1 = name
                         
                     }.font(.title2).buttonStyle(.borderedProminent).tint(.purple)
                     

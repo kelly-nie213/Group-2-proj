@@ -6,9 +6,34 @@
 //
 
 import SwiftUI
-
+var workoutRoutine = ""
 struct fitnessGoals: View {
+    func shoulderWorkout() {
+       workoutRoutine = "1. Arm Circles - 2 minutes (1 minute forward, 1 minute backward)\n 2. Resistance Band Shoulder Press - 2 sets of 15 reps\n Overhead Shoulder Press - 4 sets of 8 reps\n3. Lateral Raises - 4 sets of 12 reps\n 4. Front Raises - 3 sets of 14 reps \n 5. Arnold Press - 3 sets of 12 reps"
+    }
+    func legWorkout() {
+      workoutRoutine = "1. Jogging - 15 to 20 mins \n 2. Deadlifts - 4 sets of 6 reps \n 3. Lunges - 3 sets of 12 reps \n 4. Leg Press - 3 sets of 15 reps"
+    }
+    func tricepWorkout() {
+      workoutRoutine = "1. Close-Grip Bench Press - 4 sets of 10 reps \n 2. Tricep Dips - 3 sets of 10 reps \n 3. Overhead Tricep Extension - 3 sets of 15 reps \n 4. Tricep Pushdowns - 3 sets of 12 reps \n 5. Skull Crushers (Lying Tricep Extensions) - 3 sets of 15 reps"
+    }
+    func bicepWorkout() {
+      workoutRoutine = "1. Barbell Curls - 4 sets of 12 reps \n 2. Dumbbell Hammer Curls - 3 sets of 12 reps \n 3. Incline Dumbbell Curls - 3 sets of 10 reps"
+    }
+    func chestWorkout() {
+      workoutRoutine = "1. Chest Dips - 3 sets of 12 reps \n 2. Cable Crossovers - 3 sets of 15 reps \n 3. Push-Ups - 3 sets of 20 reps"
+    }
+    func backWorkout() {
+      workoutRoutine = "1. Deadlifts - 4 sets of 6 reps \n 2. Pull-Ups - 4 sets of 12 reps \n 3. Bent-Over Barbell Rows - 4 sets of 12 reps"
+    }
+    func glutesWorkout() {
+      workoutRoutine = "1. Squats - 4 sets of 8 reps \n 2. Cable Kickbacks - 3 sets of 15 per leg \n 3. Glute Bridges - 3 sets of 12 reps"
+    }
+    func coreWorkout() {
+      workoutRoutine = "1. Planks - 3 sets of 45 seconds \n 2. Russian Twists - 3 sets of 15 reps per side \n 3. Bicycle Crunches - 3 sets of 20 reps per side \n 4. Hanging Leg Raises - 3 sets of 15 reps \n 5. Toe Touches - 3 sets of 20 reps"
+    }
     var body: some View {
+        
         NavigationStack {
             VStack(alignment: .center) {
                 Text("Aim Active")
@@ -30,30 +55,36 @@ struct fitnessGoals: View {
                     Text("My Fitness Plan")
                 }.padding(.top, 5)
                 
+                
+                Text("\n\n\n\n\n\n")
+                
                 Button("shoulder") {
-                  //  shoulderWorkout()
+                   shoulderWorkout()
                 }
                 Button("leg") {
-                   // legWorkout()
+                    legWorkout()
                 }
                 Button("triceps") {
-                   // tricepWorkout()
+                   tricepWorkout()
                 }
                 Button("biceps") {
-                  //  bicepWorkout()
+                   bicepWorkout()
                 }
                 Button("chest") {
-                  //  chestWorkout()
+                   chestWorkout()
                 }
                 Button("back") {
-                  //  backWorkout()
+                   backWorkout()
                 }
                 Button("glutes") {
-                  //  glutesWorkout()
+                   glutesWorkout()
                 }
                 Button("core") {
-                   // coreWorkout()
+                   coreWorkout()
                 }
+                
+                
+                
                 Spacer() // Add a spacer to ensure buttons stay at the bottom               Spacer() // Add a spacer to push the content to the bottom
                 
                 Text("")
