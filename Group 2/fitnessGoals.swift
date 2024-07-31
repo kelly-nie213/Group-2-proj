@@ -39,22 +39,39 @@ struct fitnessGoals: View {
                 Text("Aim Active")
                     .font(.system(size: 36))
                     .italic()
-                    .padding(.top, 18) // Add padding from the top to position the text
+                    .padding(.top, 18)
+                    .bold()
                 Text("Fitness Goals").font(.system(size: 30)).padding(.top, 18)
-                Text("     Balance your healthy lifestyle with personalized workout routines set for your fitness goals!").italic().padding(.top, 5)
+                Text("     Balance your healthy lifestyle with personalized workout routines set for your fitness goals!").italic().padding(.top, 5).font(.system(size: 15))
                 NavigationLink(destination: ContentView()) {
                     Text("Home")
-                }.padding(.top, 5)
+                }
+                .padding(.top, 5)
+                .background(Color(hex: "#FAD6EE"))
+                .font(.system(size: 30))
+                .accentColor(.pink)
                 NavigationLink(destination: cause()) {
                     Text("Our Cause")
-                }.padding(.top, 5)
+                }
+                .padding(.top, 5)
+                .background(Color(hex: "#FAD6EE"))
+                .font(.system(size: 30))
+                .accentColor(.pink)
                 NavigationLink(destination: fitnessGoals()) {
                     Text("Fitness Goals")
-                }.padding(.top, 5)
+                }
+                .padding(.top, 5)
+                .background(Color(hex: "#FAD6EE"))
+                .font(.system(size: 30))
+                .accentColor(.pink)
                 NavigationLink(destination: fitnessPlan()) {
                     Text("My Fitness Plan")
-                }.padding(.top, 5)
-                
+                }
+                .padding(.top, 5)
+                .background(Color(hex: "#FAD6EE"))
+                .font(.system(size: 30))
+                .accentColor(.pink)
+            
                 
                 Text("\n\n\n\n\n\n")
                 
