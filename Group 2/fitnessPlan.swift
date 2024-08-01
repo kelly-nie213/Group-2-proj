@@ -57,7 +57,8 @@ struct fitnessPlan: View {
                 Text("\(name1)'s Workout Routine").padding(.top, 5).font(.system(size: 25))
                 Text(workoutRoutine)
                 Spacer()
-                Text("")
+                Text("Make sure to call a specialist got more info")
+                    .bold()
                 Spacer()
             }
             .background(Color(hex: "#D1AEBEFF"))
