@@ -39,78 +39,122 @@ struct fitnessGoals: View {
                 Text("Aim Active")
                     .font(.system(size: 36))
                     .italic()
-                    .padding(.top, 18)
                     .bold()
-                Text("Fitness Goals").font(.system(size: 30)).padding(.top, 18)
-                Text("     Balance your healthy lifestyle with personalized workout routines set for your fitness goals!").italic().padding(.top, 5).font(.system(size: 15))
+                Text("Fitness Goals")
+                    .font(.system(size: 30))
+                    .padding(.top, 18)
+                Text(" Balance your healthy lifestyle with")
+                    .italic()
+                    .padding(.top, 5)
+                    .font(.system(size: 20))
+                Text(" personalized workout routines set for your")
+                    .italic()
+                Text("fitness goals!")
+                    .italic()
+                    .padding(.bottom, 30)
                 NavigationLink(destination: ContentView()) {
-                    Text("Home")
+                    Text("  Home     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
+                .cornerRadius(75)
                 NavigationLink(destination: cause()) {
-                    Text("Our Cause")
+                    Text("  Our Cause     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
+                .cornerRadius(75)
                 NavigationLink(destination: fitnessGoals()) {
-                    Text("Fitness Goals")
+                    Text("  Fitness Goals     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
+                .cornerRadius(75)
                 NavigationLink(destination: fitnessPlan()) {
-                    Text("My Fitness Plan")
+                    Text("  My Fitness Plan     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
-            
+                .cornerRadius(75)
                 
                 Text("\n\n\n\n\n\n")
                 
-                Button("shoulder") {
+                Button("  Shoulder  ") {
                    shoulderWorkout()
                 }
-                Button("leg") {
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
+                Text("\n")
+                Button("  Leg  ") {
                     legWorkout()
                 }
-                Button("triceps") {
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
+                Text("\n")
+                Button("  Triceps  ") {
                    tricepWorkout()
                 }
-                Button("biceps") {
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
+                Text("\n")
+                Button("  Biceps  ") {
                    bicepWorkout()
                 }
-                Button("chest") {
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
+                Text("\n")
+                Button("  Chest  ") {
                    chestWorkout()
                 }
-                Button("back") {
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
+                Text("\n")
+                Button("  Back  ") {
                    backWorkout()
                 }
-                Button("glutes") {
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
+                
+                Text("\n")
+                Button("  Glutes  ") {
                    glutesWorkout()
                 }
-                Button("core") {
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
+                Text("\n")
+                Button("  Core  ") {
                    coreWorkout()
                 }
+                .background(Color(hex: "#FFFFFF"))
+                .font(.system(size: 25))
+                .cornerRadius(75)
                 
                 
                 
-                Spacer() // Add a spacer to ensure buttons stay at the bottom               Spacer() // Add a spacer to push the content to the bottom
-                
-                Text("")
                 
                 Spacer()
+                Text("")
+                Spacer()
+            }
+            .background(Color(hex: "#D1AEBEFF"))
             }
         }
     }
-}
 
 #Preview {
     fitnessGoals()

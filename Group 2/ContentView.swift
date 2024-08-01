@@ -45,7 +45,8 @@ struct ContentView: View {
                     Text("Home")
                         .font(.system(size: 30))
                         .padding(.top, 10)
-                        .padding(.bottom, 20) // Reduced bottom padding
+                        .padding(.bottom, 20)
+                        
                     Text("Balance your healthy lifestyle with personalized workout routines set for your fitness goals!")
                         .italic()
                         .padding(.top, 5)
@@ -67,39 +68,47 @@ struct ContentView: View {
                     }
                     .padding(.top, 20)
                     NavigationLink(destination: ContentView()) {
-                        Text("Home")
+                        Text("  Home     ")
                     }
                     .padding(.top, 5)
                     .background(Color(hex: "#FAD6EE"))
                     .font(.system(size: 30))
                     .accentColor(.pink)
+                    .cornerRadius(75)
                     NavigationLink(destination: cause()) {
-                        Text("Our Cause")
+                        Text("  Our Cause     ")
                     }
                     .padding(.top, 5)
                     .background(Color(hex: "#FAD6EE"))
                     .font(.system(size: 30))
                     .accentColor(.pink)
+                    .cornerRadius(75)
                     NavigationLink(destination: fitnessGoals()) {
-                        Text("Fitness Goals")
+                        Text("  Fitness Goals     ")
                     }
                     .padding(.top, 5)
                     .background(Color(hex: "#FAD6EE"))
                     .font(.system(size: 30))
                     .accentColor(.pink)
+                    .cornerRadius(75)
                     NavigationLink(destination: fitnessPlan()) {
-                        Text("My Fitness Plan")
+                        Text("  My Fitness Plan     ")
                     }
                     .padding(.top, 5)
                     .background(Color(hex: "#FAD6EE"))
                     .font(.system(size: 30))
                     .accentColor(.pink)
+                    .cornerRadius(75)
                 }
                 Spacer()
                 Text("")
                 Spacer()
             }
-            .padding() // Add padding around the VStack for better layout
+            .padding()
+            .ignoresSafeArea()
+            .background(Color(hex: "#d1aebeff"))
+
+            
         }
     }
 }

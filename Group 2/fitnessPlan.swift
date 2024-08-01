@@ -17,47 +17,51 @@ struct fitnessPlan: View {
                     .padding(.top, 15)
                     .bold()
                 Text("My Fitness Plan").font(.system(size: 30)).padding(.top, 15)
-                Text("   Hard work always pays off! Here is your personalized workout routine.").italic().padding(.top, 5).font(.system(size: 15))
+                Text("   Hard work always pays off! Here is your personalized workout routine.")
+                    .italic()
+                    .padding(.top, 5)
+                    .font(.system(size: 20))
                 NavigationLink(destination: ContentView()) {
-                    Text("Home")
+                    Text("  Home     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
-                
+                .cornerRadius(75)
                 NavigationLink(destination: cause()) {
-                    Text("Our Cause")
+                    Text("  Our Cause     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
+                .cornerRadius(75)
                 NavigationLink(destination: fitnessGoals()) {
-                    Text("Fitness Goals")
+                    Text("  Fitness Goals     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
+                .cornerRadius(75)
                 NavigationLink(destination: fitnessPlan()) {
-                    Text("My Fitness Plan")
+                    Text("  My Fitness Plan     ")
                 }
                 .padding(.top, 5)
                 .background(Color(hex: "#FAD6EE"))
                 .font(.system(size: 30))
                 .accentColor(.pink)
+                .cornerRadius(75)
+                
+                Text("\(name1)'s Workout Routine").padding(.top, 5).font(.system(size: 25))
+                Text(workoutRoutine)
+                Spacer()
+                Text("")
+                Spacer()
             }
-            Text("\(name1)'s Workout Routine").padding(.top, 5).font(.system(size: 25))
-            Text(workoutRoutine)
-            Spacer() // Add a spacer to ensure buttons stay at the bottom               Spacer() // Add a spacer to push the content to the bottom
-            
-            Text("")
-            
-            Spacer()
+            .background(Color(hex: "#D1AEBEFF"))
         }
-        
-
     }
 }
 #Preview {
